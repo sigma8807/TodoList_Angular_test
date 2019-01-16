@@ -1,11 +1,13 @@
-<ul>
-  <li *ngFor="let item of items">
-    <label htmlFor="{{item.id}}">
-      <input id="{{item.id}}" type="checkbox" [checked]="item.done"> {{ item.value }}
-    </label>
-    
-    <a href="#">刪除</a>
-    <span *ngIf="item.done">(已完成)</span>
+<ul class="TodoList"> 
+  <li *ngFor="let item of getTodoList();let idx=index">
+    <a>
+      <span class="badge">{{idx}}</span> 
+      <input id="chk_{{item.id}}" type="checkbox" [checked]="item.done" (click)="itemClick(item)">
+      {{item.value}}
+      <span *ngIf="item.done">(已完成)</span>
+    </a>
+    <button class ="delete" (click)="delete(item)">X</button>
     
   </li>
 </ul>
+
