@@ -1,0 +1,12 @@
+<div>
+  <button (click)="showConfig()">getJson</button>
+  <span *ngIf="data">
+    <li *ngFor='let i of data'>
+      <p>ID : "{{i.id}}"</p>
+      <p>Value : "{{i.value}}"</p>
+    </li>
+    
+  </span>
+  
+
+</div>
