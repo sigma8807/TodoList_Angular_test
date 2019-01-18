@@ -6,11 +6,10 @@ import { TodoItems } from './todoItem';
   providedIn: 'root'
 })
 export class GetJsonService {
-  //test: string = '123';
-  //data: string[];
+
   sourceUrl = '/test';
 
-  constructor(private http :HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   getdata() {
     return this.http.get<TodoItems[]>(this.sourceUrl);

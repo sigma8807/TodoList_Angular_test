@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GetJsonService } from '../get-json.service'
+import { GetJsonService } from '../get-json.service';
 import { TodoItems } from '../todoItem';
 @Component({
   selector: 'app-get-json',
@@ -8,13 +8,13 @@ import { TodoItems } from '../todoItem';
 })
 export class GetJsonComponent implements OnInit {
 
-  constructor(private getJsonService :GetJsonService) { }
+  constructor(private getJsonService: GetJsonService) { }
+  data: TodoItems[];
   ngOnInit() {
   }
-  data: TodoItems[];
 
   showConfig() {
     this.getJsonService.getdata()
-      .subscribe(Data =>this.data=Data);
+      .subscribe(Data => this.data = Data);
   }
 }

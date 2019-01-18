@@ -1,5 +1,5 @@
-export class TodoItems{
+export class TodoItems {
     id: number;
     value: string;
-    done:boolean;
+    done: boolean;
 }

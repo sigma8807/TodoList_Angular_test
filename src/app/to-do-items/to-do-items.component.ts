@@ -10,13 +10,12 @@ import { TodoListService } from '../todo-list.service';
 })
 
 export class ToDoItemsComponent implements OnInit {
-  constructor(private todoListService : TodoListService) { }
+  constructor(private todoListService: TodoListService) { }
   ngOnInit() {
   }
-  getTodoList(){
+  getTodoList() {
     return this.todoListService.getTodoList();
   }
-  
   itemClick(item: TodoItems) {
     this.todoListService.toogleItemStatus(item);
   }

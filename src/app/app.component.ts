@@ -11,7 +11,6 @@ export class AppComponent {
   getDate() {
     return (new Date());
   }
-  //constructor(private todoListService: TodoListService) {
-  //}
+
 
 }
