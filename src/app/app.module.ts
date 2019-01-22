@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { AddFormComponent } from './add-form/add-form.component';
 import { ToDoItemsComponent } from './to-do-items/to-do-items.component';
 import { TodoListService } from './todo-list.service';
-import { GetJsonComponent } from './get-json/get-json.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
@@ -16,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     AddFormComponent,
     ToDoItemsComponent,
-    GetJsonComponent,
   ],
   imports: [
     BrowserModule,

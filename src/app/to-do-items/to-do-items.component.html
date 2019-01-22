@@ -1,5 +1,5 @@
 <ul class="TodoList">
-  <li *ngFor="let item of getTodoList();let idx=index">
+  <li *ngFor = "let item of getTodoList();let idx=index">
     <a>
       <span class="badge">{{idx}}</span>
       <input id="{{item.id}}" type="checkbox" [checked]="item.done" (click)="itemClick(item)">

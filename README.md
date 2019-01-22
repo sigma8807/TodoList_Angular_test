@@ -30,6 +30,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## 資料來源
  - https://dotblogs.com.tw/wellwind/2017/02/03/angular2-service
  - https://ithelp.ithome.com.tw/users/20103745/ironman/1160?page=1
+- https://codecraft.tv/courses/angular/http/core-http-api/
+
+## MongoDB
+- https://blog.csdn.net/bg1017759447/article/details/79052702
 
 ## Github push
 - git add.
