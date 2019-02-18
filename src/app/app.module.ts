@@ -23,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
 
   ],
-  providers: [TodoListService],
+  providers: [TodoListService], // 給appModule使用,若要使用CLI來自動完成providers的設定，則可以用下面的指令:ng generate service hero --module=app
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

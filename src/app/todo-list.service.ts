@@ -6,6 +6,8 @@ import { HttpHeaders } from '@angular/common/http';
 
 
 @Injectable({providedIn: 'root'})
+
+// 注意到我們用@Injectable()來宣告TodoListService這個類別，代表這個類別可能本身有依賴注入，對Service來說是強烈建議要加上這個宣告
 export class TodoListService {
   sourceUrl_post = '/adds';
   sourceUrl_delete = '/del';

@@ -11,12 +11,13 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class ToDoItemsComponent implements OnInit {
-  constructor(private todoListService: TodoListService,
+  constructor(private todoListService: TodoListService,  // 宣告注入的service
               private http: HttpClient) { }
   sourceUrl_get = '/test';
   // todoItems = this.todoItems = this.http.get<TodoItems[]>(this.sourceUrl_get).subscribe(Data => this.todoItems = Data);
   todoItems = this.http.get<TodoItems[]>(this.sourceUrl_get).subscribe(Data => this.todoItems = Data);
   ngOnInit() {
+    // ngOnInit會在初始化元件時被呼叫
   }
 
   getTodoList() {
