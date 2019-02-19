@@ -2,7 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { TodoListService } from '../todo-list.service';
 
 
-// @Component則是用來定義這一個元件的相關資訊，有三個metadata
+// @Component則是用來定義這一個元件的相關資訊
+// metadata則是在component.ts裡由@Component開頭的區塊來宣告，
+// 裡面會定義這個Component在要如何在別的元件的template裡被引用，
+// templateUrl則是定義自己這個元件要顯示的html模版位置及styleUrls是css檔案位置。
+// <app-add-form></app-add-form> 來呼叫
+
+
 
 @Component({
   selector: 'app-add-form',  // the components CSS element selector以及在HTML裡要宣告的TAG名稱
